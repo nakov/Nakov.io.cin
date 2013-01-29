@@ -1,4 +1,4 @@
-﻿namespace Nakov.IO
+namespace Nakov.IO
 {
 	using System;
 	using System.Text;
