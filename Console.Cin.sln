@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Cin", "Console.Cin.csproj", "{9F1EC62F-DA2F-41C4-BD15-10CFC3D1B919}"
 EndProject
 Global
