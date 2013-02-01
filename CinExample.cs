@@ -1,6 +1,7 @@
 ﻿using System;
 using Nakov.IO; // see http://www.nakov.com/tags/cin
 
+
 public class CinExample
 {
 	static void Main()
