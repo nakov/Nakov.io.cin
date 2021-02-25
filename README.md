@@ -1,5 +1,5 @@
-Nakov.IO.Cin - the C# console input working as `cin` in C++
-===========================================================
+Nakov.IO.Cin: the C# console input working as `cin` in C++
+==========================================================
 
 `Nakov.IO.Cin` is a console-based input reader for C#, which reads numbers and text in the C++ `cin` / `cout` / `iostream` style.
 
