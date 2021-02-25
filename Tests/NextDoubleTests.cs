@@ -1,9 +1,8 @@
-﻿
-namespace Console.Cin.Tests
+﻿namespace Console.Cin.Tests
 {
+    using System.Threading;
     using System.Globalization;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-    using System.Threading;
     using Nakov.IO;
 
     [TestClass]
