@@ -31,16 +31,11 @@ public class CinExample
             numbers[i] = Cin.NextDecimal();
         }
 
-        Console.Write("The numbers in ascending order: ");
         Array.Sort(numbers);
-        for (int i = 0; i < n; i++)
-        {
-            Console.Write(numbers[i]);
-            Console.Write(' ');
-        }
-        Console.WriteLine();
+        Console.WriteLine("The numbers in ascending order: {0}",
+            string.Join(' ', numbers));
 
-        Console.WriteLine("Enter two strings seperated by a space: ");
+        Console.Write("Enter two strings seperated by a space: ");
         // cin >> firstStr >> secondStr;
         string firstStr = Cin.NextToken();
         string secondStr = Cin.NextToken();
