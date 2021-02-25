@@ -1,7 +1,7 @@
 Nakov.IO.Cin - the C# console input working as `cin` in C++
 ===========================================================
 
-Nakov.IO.CIN - Console input for C# in the C++ cin / cout / iostream style
+Nakov.IO.Cin - Console input for C# in the C++ cin / cout / iostream style
 
 Install the NuGet Package
 -------------------------
