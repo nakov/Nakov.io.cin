@@ -1,5 +1,5 @@
 ﻿using System;
-using Nakov.IO; // see http://www.nakov.com/tags/cin
+using Nakov.IO; // See http://www.nakov.com/tags/cin
 
 public class CinExample
 {
@@ -20,12 +20,14 @@ public class CinExample
 		Console.WriteLine("x={0}, y={1}", x, y);
 
 		Console.Write("Enter a positive integer number N: ");
+		// cin >> n;
 		int n = Cin.NextInt();
 
 		Console.Write("Enter N decimal numbers separated by a space: ");
 		decimal[] numbers = new decimal[n];
 		for (int i = 0; i < n; i++)
 		{
+			// cin >> numbers[i];
 			numbers[i] = Cin.NextDecimal();
 		}
 
@@ -39,6 +41,7 @@ public class CinExample
 		Console.WriteLine();
 
 		Console.WriteLine("Enter two strings seperated by a space: ");
+		// cin >> firstStr >> secondStr;
 		string firstStr = Cin.NextToken();
 		string secondStr = Cin.NextToken();
 		Console.WriteLine("First str={0}", firstStr);

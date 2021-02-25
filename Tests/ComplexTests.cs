@@ -14,8 +14,8 @@
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
-            //If you want to add new tokens to a certain group (each group tests different methods)
-            //just add it with a space between " ", except for [0], there use "\n"
+            // If you want to add new tokens to a certain group (each group tests different methods)
+            // just add it with a space between " ", except for [0], there use "\n"
             var expectedTokens = new string[] {"let's test this out. \n test 1 2 3", "1  2", "3.14 5.251", "999999999999999999999999999.00", "complex test" };
             SetInput($"{expectedTokens[0]}\n{expectedTokens[1]}\n{expectedTokens[2]}\n{expectedTokens[3]}\n{expectedTokens[4]}");
 
