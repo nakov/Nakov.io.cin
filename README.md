@@ -1,7 +1,7 @@
-Nakov.IO.Cin - the C# console input working as `cin` in C++
-===========================================================
+Nakov.IO.Cin: the C# console input working as `cin` in C++
+==========================================================
 
-Nakov.IO.Cin - Console input for C# in the C++ cin / cout / iostream style
+`Nakov.IO.Cin` is a console-based input reader for C#, which reads numbers and text in the C++ `cin` / `cout` / `iostream` style.
 
 Install the NuGet Package
 -------------------------
@@ -65,43 +65,43 @@ More Detailed Example
 ```cs
 using System;
 using Nakov.IO; // See http://www.nakov.com/tags/cin
- 
+
 public class CinExample
 {
     static void Main()
     {
         Console.Write("Enter your name: ");
         string name = Console.ReadLine();
- 
+
         Console.Write("Enter two integers x and y separated by whitespace: ");
         // cin >> x >> y;
         int x = Cin.NextInt();
         double y = Cin.NextDouble();
- 
+
         Console.Write("Enter your age: ");
         int age = int.Parse(Console.ReadLine());
- 
+
         Console.WriteLine("Name: {0}, Age: {1}", name, age);
         Console.WriteLine("x={0}, y={1}", x, y);
- 
+
         Console.Write("Enter a positive integer number N: ");
+        // cin >> n;
         int n = Cin.NextInt();
- 
+
         Console.Write("Enter N decimal numbers separated by a space: ");
         decimal[] numbers = new decimal[n];
         for (int i = 0; i < n; i++)
-            numbers[i] = Cin.NextDecimal();
- 
-        Console.Write("The numbers in ascending order: ");
-        Array.Sort(numbers);
-        for (int i = 0; i < n; i++)
         {
-            Console.Write(numbers[i]);
-            Console.Write(' ');
+            // cin >> numbers[i];
+            numbers[i] = Cin.NextDecimal();
         }
-        Console.WriteLine();
- 
-        Console.WriteLine("Enter two strings seperated by a space: ");
+
+        Array.Sort(numbers);
+        Console.WriteLine("The numbers in ascending order: {0}",
+            string.Join(' ', numbers));
+
+        Console.Write("Enter two strings seperated by a space: ");
+        // cin >> firstStr >> secondStr;
         string firstStr = Cin.NextToken();
         string secondStr = Cin.NextToken();
         Console.WriteLine("First str={0}", firstStr);
@@ -110,4 +110,27 @@ public class CinExample
 }
 ```
 
-Learn more at: http://www.nakov.com/tags/cin
+This is a sample **input and output** from the above example:
+```
+Enter your name: Albert Einstein
+Enter two integers x and y separated by whitespace:
+   10
+                20
+Enter your age:         25
+Name: Albert Einstein, Age: 25
+x=10, y=20
+Enter a positive integer number N:
+5
+Enter N decimal numbers separated by a space: 10  30 40
+
+50
+        20
+The numbers in ascending order: 10 20 30 40 50
+Enter two strings seperated by a space:
+        Visual                  Studio
+First str=Visual
+Second str=Studio
+```
+Note that input numbers and string tokens can be separated by single space, by a new line or by a sequence of white space characters.
+
+Learn more at: http://www.nakov.com/tags/cin.
