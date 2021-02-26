@@ -131,5 +131,6 @@ Enter two strings seperated by a space:
 First str=Visual
 Second str=Studio
 ```
+Note that input numbers and string tokens can be separated by single space, by a new line or by a sequence of white space characters.
 
 Learn more at: http://www.nakov.com/tags/cin.
