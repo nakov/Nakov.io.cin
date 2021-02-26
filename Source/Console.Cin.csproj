@@ -1,11 +1,50 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net20</TargetFrameworks>
     <OutputType>Library</OutputType>
-    <Version>2.0.0</Version>
-    <Description>Console input for C# in the C++ style: cin &gt;&gt; x &gt;&gt; y</Description>
-    <PackageProjectUrl>https://github.com/nakov/Nakov.io.cin</PackageProjectUrl>
+    <Version>2.0.2.1</Version>
+    <Description>Nakov.IO.Cin is a console-based input parser for C#, which reads numbers and text in the C++ cin / cout / iostream style. For example, in C++ we can read two integers using this code:
+
+int x, y;
+cin &gt;&gt; x &gt;&gt; y;
+
+With Nakov.IO.Cin we can write the same code in C# like this:
+
+int x = Cin.NextInt();
+int y = Cin.NextInt();
+
+Like in C++, the whitespace will be skipped so users can enter the input numbers on the same line, separated by spaces or on separate lines.
+
+Nakov.IO.Cin supports reading int, double, decimal and string tokens.
+
+Learn more at: https://github.com/nakov/Nakov.io.cin</Description>
+    <PackageProjectUrl>https://nakov.com/blog/2011/11/23/cin-class-for-csharp-read-from-console-nakov-io-cin/</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/nakov/Nakov.io.cin</RepositoryUrl>
+    <Copyright>(c) 2011 - 2021 by Svetlin Nakov</Copyright>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Authors>Svetlin Nakov</Authors>
+    <Company>SoftUni</Company>
+    <PackageId>Nakov.IO.Cin</PackageId>
+    <Product>Nakov.IO.Cin</Product>
+    <PackageIcon>Nakov.IO.Cin-icon.png</PackageIcon>
+    <PackageTags>cin, cout, iostream, C++, C#</PackageTags>
+    <PackageReleaseNotes>This release supports the .NET Standard (.NET Core and .NET Framework).</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <AssemblyVersion>2.0.2.1</AssemblyVersion>
+    <FileVersion>2.0.2.1</FileVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="Nakov.IO.Cin-icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
