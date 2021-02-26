@@ -110,4 +110,26 @@ public class CinExample
 }
 ```
 
+This is a sample **input and output** from the above example:
+```
+Enter your name: Albert Einstein
+Enter two integers x and y separated by whitespace:
+   10
+                20
+Enter your age:         25
+Name: Albert Einstein, Age: 25
+x=10, y=20
+Enter a positive integer number N:
+5
+Enter N decimal numbers separated by a space: 10  30 40
+
+50
+        20
+The numbers in ascending order: 10 20 30 40 50
+Enter two strings seperated by a space:
+        Visual                  Studio
+First str=Visual
+Second str=Studio
+```
+
 Learn more at: http://www.nakov.com/tags/cin.
